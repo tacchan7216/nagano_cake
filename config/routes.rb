@@ -28,14 +28,14 @@ Rails.application.routes.draw do
     get '' => 'homes#top'
   end
   devise_for :customers, controllers: {
-  sessions:      'customer/sessions',
-  passwords:     'customer/passwords',
-  registrations: 'customer/registrations'
+  sessions:      'customers/sessions',
+  passwords:     'customers/passwords',
+  registrations: 'customers/registrations'
 }
   devise_for :admins, controllers: {
-  sessions:      'admin/sessions',
-  passwords:     'admin/passwords',
-  registrations: 'admin/registrations'
+  sessions:      'admins/sessions',
+  passwords:     'admins/passwords',
+  registrations: 'admins/registrations'
 }
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
